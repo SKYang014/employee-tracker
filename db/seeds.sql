@@ -1,18 +1,18 @@
-INSERT INTO department (name)
+INSERT INTO departments (name_)
 VALUES
     ('Finance'),
     ('Business'),
     ('Retail');
 
-    INSERT INTO role (title, salary)
+    INSERT INTO roles (title, salary, department_id)
 VALUES
-    ('Regional Manager', '75,000.00'),
-    ('Local Manager', '65,000.00'),
-    ('Intern', '45,000.00');
+    ('Regional Manager', 75000.00, 1),
+    ('Local Manager', 65000.00, 2),
+    ('Intern', 45000.00, 3);
 
-INSERT INTO employee (first_name, last_name, manager_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-    ('Ronald', 'Firbank', 12345),
-    ('Virginia', 'Woolf', 54321),
-    ('Piers', 'Gaveston', null),
-    ('Charles', 'LeRoi', null);
+    ('Ronald', 'Firbank', 1, null),
+    ('Virginia', 'Woolf', 2, 1),
+    ('Piers', 'Gaveston', 3, 2),
+    ('Charles', 'LeRoi', 3, 2);
