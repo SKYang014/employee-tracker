@@ -174,7 +174,6 @@ const addEmployee = () => {
                     }
                     else {
                         viewEmployees(result)
-                        promptUser()
                     }
                 });
             }
@@ -212,7 +211,6 @@ const addDept = () => {
                     }
                     else {
                         viewDepts(result)
-                        promptUser()
                     }
                 });
             }
@@ -265,7 +263,6 @@ const addRole = () => {
                     }
                     else {
                         viewRoles(result)
-                        promptUser()
                     }
                 });
             }
